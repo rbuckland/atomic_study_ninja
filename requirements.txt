@@ -1,0 +1,11 @@
+# support
+
+pre-commit==3.2.2
+nbstripout==0.6.1
+
+
+# libraries
+numpy==1.24.2
+matplotlib==3.7.1
+manim==0.17.3
+IPython==8.12.0
