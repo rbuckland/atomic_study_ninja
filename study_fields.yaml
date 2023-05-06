@@ -1,0 +1,37 @@
+topic_fields:
+  - name: physics
+    rules_principles_concepts:
+      -
+          name: Pauli Exclusion Principle
+          summary: number of electron field energies for a given atom; no two electrons can have the same set of quantum numbers
+      - aufbau_principle:
+          name: Aufbau Principle
+          summary: Electrons fill the lowest energy first. Order in which electrons fill the orbitals
+      hunds_rules:
+        image:
+      quantum_numbers:
+        name: Quantum numbers
+      electron_orbitals: {}
+  - name: maths
+    subject:
+      linear_algebra:
+
+resources:
+  books:
+  videos:
+    - url: https://www.youtube.com/watch?v=9ra0BHbHdoA
+      content:
+        - topic_fields.physics.rules_principles_concepts.pauli_exclusion_principle
+        - topic_fields.physics.rules_principles_concepts.aufbau_principle
+        - topic_fields.physics.rules_principles_concepts.hunds_rules
+        - topic_fields.physics.rules_principles_concepts.quantum_numbers
+
+    - url: https://www.youtube.com/watch?v=Aoi4j8es4gQ
+      title: Prof Dave - Quantum Numbers, Atomic Orbitals, and Electron Configurations
+      content:
+        - topic_fields.physics.rules_principles_concepts.pauli_exclusion_principle
+        - topic_fields.physics.rules_principles_concepts.aufbau_principle
+        - topic_fields.physics.rules_principles_concepts.quantum_numbers
+    - url: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+      title: 3Blue1Brown - Linear Algebra - Series
+  websites:

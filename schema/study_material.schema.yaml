@@ -1,0 +1,50 @@
+definitions:
+  BaseThing:
+    properties: {}
+    title: BaseThing
+    type: object
+  Resource:
+    properties:
+      references:
+        items: {$ref: '#/definitions/BaseThing'}
+        title: References
+        type: array
+      title: {title: Title, type: string}
+      url: {title: Url, type: string}
+    required: [title, url, references]
+    title: Resource
+    type: object
+  RulePrincipleConcept:
+    properties:
+      name: {title: Name, type: string}
+      relates_to:
+        items: {$ref: '#/definitions/BaseThing'}
+        title: Relates To
+        type: array
+      summary: {title: Summary, type: string}
+    required: [name, summary, relates_to]
+    title: RulePrincipleConcept
+    type: object
+  TopicField:
+    properties:
+      name: {title: Name, type: string}
+      rules_principles_concepts:
+        items: {$ref: '#/definitions/RulePrincipleConcept'}
+        title: Rules Principles Concepts
+        type: array
+    required: [name, rules_principles_concepts]
+    title: TopicField
+    type: object
+properties:
+  resources:
+    items: {$ref: '#/definitions/Resource'}
+    title: Resources
+    type: array
+  topic_fields:
+    items: {$ref: '#/definitions/TopicField'}
+    title: Topic Fields
+    type: array
+required: [topic_fields, resources]
+title: StudyMaterial
+type: object
+

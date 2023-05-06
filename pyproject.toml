@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "atomic_study_ninja"
+version = "0.1.0"
+description = "infographic maker ; mega study assist"
+authors = ["Ramon Buckland <ramon@thebuckland.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+atomic_study_ninja = "atomic_study_ninja.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+pre-commit = "^3.2.2"
+nbstripout = "^0.6.1"
+numpy = "^1.24.2"
+matplotlib = "^3.7.1"
+manim = "^0.17.3"
+IPython = "^8.12.0"
+ipykernel = "^6.22.0"
+"ruamel.yaml" = ">=0.17"
+pydantic = "^1.10.7"
+docopt = "^0.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
