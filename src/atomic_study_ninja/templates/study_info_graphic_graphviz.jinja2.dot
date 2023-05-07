@@ -8,22 +8,24 @@ node [fontname="Helvetica,Arial,sans-serif", shape="record", style="rounded"]
 edge [fontname="Helvetica,Arial,sans-serif"]
 layout = fdp;
 splines = true;
+concentrate=true;
 
 {% for t in topic_fields %}
 subgraph "cluster_{{t.name}}" {
     label = "<b>{{t.name | capitalize}}<b>";
-    penwidth = 0;
-    bgcolor = "{{COLOR_PINK}}"
+    penwidth = 0.5;
+    style = "rounded, dashed"
+    color = "{{COLOR_PINK}}"
 
     {% for s in t.subjects_topics %}
         {{s.id}} [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='{{COLOR_BLUE1}}'>{{s.name}}</td>
+               label=<<table border="0" style="rounded" color='{{COLOR_BLUE1}}'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='{{COLOR_BLUE1}}'>{{s.name}}</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>{{s.description | wordwrap( width = (s.name | length), wrapstring = '<br/>') }}</td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>{{s.description | wordwrap( width = ([ (s.name | length), 25 ] | max), wrapstring = '<br/>') }} {{s.url}}</td>
                           </tr>
                        </table>
                       >
@@ -34,12 +36,12 @@ subgraph "cluster_{{t.name}}" {
     {% for p in t.rules_principles_concepts %}
         {{p.id}} [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='{{COLOR_YELLOW}}'>{{p.name}}</td>
+               label=<<table border="0" style="rounded" color='{{COLOR_YELLOW}}'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='{{COLOR_YELLOW}}'>{{p.name}}</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>{{p.description | wordwrap( width = (p.name | length), wrapstring = '<br/>') }} {{p.url}}</td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>{{p.description | wordwrap( width = ([ (p.name | length), 25 ] | max), wrapstring = '<br/>') }} {{p.url}}</td>
                           </tr>
                        </table>
                       >

@@ -34,6 +34,10 @@ topic_fields:
         name: General Relativity
         url: ""
         description: ""
+      - id: special_relativity
+        name: Special Relativity
+        url: ""
+        description: ""
       - id: quantum_numbers
         name: Quantum numbers
         url: ""
@@ -65,7 +69,15 @@ topic_fields:
       - id: nmr
         name: Nuclear Magnetic Resonance
         url: ""
-        description: ""
+        description: Nuclear magnetic resonance (NMR) is a physical phenomenon in which nuclei in a strong constant magnetic field are perturbed by a weak oscillating magnetic field (in the near field) and respond by producing an electromagnetic signal with a frequency characteristic of the magnetic field at the nucleus.
+      - id: einsteins_equation
+        name: Einsteins Equation
+        url: ""
+        description: In the general theory of relativity, the Einstein field equations relate the geometry of spacetime to the distribution of matter within it.
+      - id: hamiltonian
+        name: Hamiltonian
+        url: ""
+        description: In quantum mechanics, the Hamiltonian of a system is an operator corresponding to the total energy of that system, including both kinetic energy and potential energy.
     subjects_topics:
       - id: single_electron_transistor
         name: Single Electron Transistor
@@ -90,16 +102,21 @@ topic_fields:
         name: Differential Calculus
         url: ""
         description:
-          Differential Equations; Relates one or more unknown functions
-          and their derivatives.
+          Differential calculus is about finding the rate of change of
+          one quantity with respect to another quantity.
       - id: complex_numbers
         name: Complex Numbers
         url: ""
-        description: ""
+        description:
+          Complex numbers are the field C of numbers of the form x+iy,
+          where x and y are real numbers and i is the imaginary unit equal to √-1
       - id: integral_calculus
         name: Integral Calculus
         url: ""
-        description: ""
+        description:
+          Integral Calculus is the branch of calculus where we study integrals
+          and their properties. Integration is an essential concept which is the inverse
+          process of differentiation
       - id: probabilities
         name: Probabilities and Statistics
         url: ""
@@ -107,7 +124,48 @@ topic_fields:
       - id: euclidean_geometry
         name: Euclidean Geometry
         url: ""
-        description: ""
+        description:
+          Euclidean geometry, the study of plane and solid figures on the
+          basis of five axioms, and theorems employed by the Greek mathematician Euclid
+          (c. 300 bce).
+      - id: non_euclidean_geometry
+        name: Non Euclidean Geometry
+        url: ""
+        description:
+          Non-Euclidean geometry is the study of geometry on surfaces which
+          are not flat; e.g. spacetime in our universe
+      - id: differential_geometry
+        name: Differential Geometry
+        url: ""
+        description:
+          Differential geometry is a mathematical discipline that studies
+          the geometry of smooth shapes and smooth spaces, otherwise known as smooth
+          manifolds.
+      - id: geometry
+        name: Geometry
+        url: ""
+        description: Geometry is all about shapes and their properties.
+      - id: algebra
+        name: Algebra
+        url: ""
+        description:
+          Algebra is the part of mathematics that helps represent problems
+          or situations in the form of mathematical expressions
+      - id: calculus
+        name: Calculus
+        url: ""
+        description:
+          Calculus is the mathematical study of change, in the same way
+          that geometry is the study of shape and algebra is the study of operations
+          and their application to solving equations
+      - id: hilbert_space
+        name: Hilbert Space
+        url: ""
+        description:
+          A Hilbert space is a mathematical concept covering the extra-dimensional
+          use of Euclidean space—i.e., a space with more than three dimensions. A
+          Hilbert space uses the mathematics of two and three dimensions to try and
+          describe what happens in greater than three dimensions.
 resources:
   - id: vid_aufbau_hund_pauli
     name: Aufbau principle, Hund's rule & Pauli exclusion principle
@@ -119,7 +177,7 @@ resources:
     name: 3Blue1Brown - Linear Algebra - Series
     url: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
   - id: lessons_gilbert_strang_diff_equations_lin_alg
-    name: Differential Equations and Linear Algebra
+    name: Online Course - Differential Equations and Linear Algebra - Gilbert Strang
     url: https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/pages/differential-equations-and-linear-algebra/
   - id: lessons_khan_acadamy_diff_equations
     name: Khan Academy - Differential Equations
@@ -165,6 +223,27 @@ resources:
   - id: nuclearmagneticresonancewikipedia
     name: Nuclear magnetic resonance - Wikipedia
     url: https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance
+  - id: howgeometrycreatedmodernphysicswithyanghuiheyoutube
+    name: How geometry created modern physics – with Yang-Hui He - YouTube
+    url: https://www.youtube.com/watch?v=z8jdndd-x7w
+  - id: ila6thed2023
+    name: BOOK - Introduction to Linear Algebra, 6th Ed. (2023) - Gilbert Strang
+    url: https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html
+  - id: complexnumbersyoutube
+    name: Complex Numbers - Eddie Woo - YouTube
+    url: https://www.youtube.com/playlist?list=PL5KkMZvBpo5CE__2qeqZQa5e8gSkt1Ypy
+  - id: introductiontodifferentiationyoutube
+    name: Introduction to Differentiation - Eddie Woo - YouTube
+    url: https://www.youtube.com/playlist?list=PL5KkMZvBpo5DwIsDKWdHYmkRZmXMi1mE8
+  - id: complexnumbersalgebra2mathkhanacademy
+    name: Complex numbers - Algebra 2 - Math - Khan Academy
+    url: https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:complex
+  - id: differential_calculus_syd_unsw_book
+    name: Sydney University - Introduction to Differential Calculus
+    url: https://www.sydney.edu.au/content/dam/students/documents/mathematics-learning-centre/introduction-to-differential-calculus.pdf
+  - id: understanding_einsteins_equation_general_relativity
+    name: How to understand Einstein’s equation for general relativity
+    url: https://bigthink.com/starts-with-a-bang/einstein-general-theory-relativity-equation/
 relates:
   - r_from: electron_orbitals
     r_to: pauli_exclusion
@@ -234,4 +313,73 @@ relates:
     rel_type: explains
   - r_from: electron_orbitals
     r_to: electron
+    rel_type: relates_to
+  - r_from: howgeometrycreatedmodernphysicswithyanghuiheyoutube
+    r_to: euclidean_geometry
+    rel_type: relates_to
+  - r_from: howgeometrycreatedmodernphysicswithyanghuiheyoutube
+    r_to: geometry
+    rel_type: relates_to
+  - r_from: howgeometrycreatedmodernphysicswithyanghuiheyoutube
+    r_to: algebra
+    rel_type: relates_to
+  - r_from: howgeometrycreatedmodernphysicswithyanghuiheyoutube
+    r_to: calculus
+    rel_type: relates_to
+  - r_from: howgeometrycreatedmodernphysicswithyanghuiheyoutube
+    r_to: special_relativity
+    rel_type: relates_to
+  - r_from: howgeometrycreatedmodernphysicswithyanghuiheyoutube
+    r_to: general_relativity
+    rel_type: relates_to
+  - r_from: howgeometrycreatedmodernphysicswithyanghuiheyoutube
+    r_to: differential_geometry
+    rel_type: relates_to
+  - r_from: differential_geometry
+    r_to: differential_calculus
+    rel_type: relates_to
+  - r_from: differential_calculus
+    r_to: calculus
+    rel_type: relates_to
+  - r_from: integral_calculus
+    r_to: calculus
+    rel_type: relates_to
+  - r_from: differential_geometry
+    r_to: geometry
+    rel_type: relates_to
+  - r_from: euclidean_geometry
+    r_to: geometry
+    rel_type: relates_to
+  - r_from: non_euclidean_geometry
+    r_to: geometry
+    rel_type: relates_to
+  - r_from: seancarrollextractingtheuniversefromthewavefunctionyoutube
+    r_to: einsteins_equation
+    rel_type: explains
+  - r_from: seancarrollextractingtheuniversefromthewavefunctionyoutube
+    r_to: hilbert_space
+    rel_type: explains
+  - r_from: seancarrollextractingtheuniversefromthewavefunctionyoutube
+    r_to: hamiltonian
+    rel_type: explains
+  - r_from: ila6thed2023
+    r_to: linear_algebra
+    rel_type: teaches
+  - r_from: complexnumbersyoutube
+    r_to: complex_numbers
+    rel_type: teaches
+  - r_from: introductiontodifferentiationyoutube
+    r_to: differential_calculus
+    rel_type: teaches
+  - r_from: complexnumbersalgebra2mathkhanacademy
+    r_to: complex_numbers
+    rel_type: teaches
+  - r_from: differential_calculus_syd_unsw_book
+    r_to: differential_calculus
+    rel_type: teaches
+  - r_from: understanding_einsteins_equation_general_relativity
+    r_to: einsteins_equation
+    rel_type: explains
+  - r_from: general_relativity
+    r_to: einsteins_equation
     rel_type: relates_to

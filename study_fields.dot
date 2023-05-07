@@ -8,22 +8,24 @@ node [fontname="Helvetica,Arial,sans-serif", shape="record", style="rounded"]
 edge [fontname="Helvetica,Arial,sans-serif"]
 layout = fdp;
 splines = true;
+concentrate=true;
 
 
 subgraph "cluster_quantum computing" {
     label = "<b>Quantum computing<b>";
-    penwidth = 0;
-    bgcolor = "#CC79A7"
+    penwidth = 0.5;
+    style = "rounded, dashed"
+    color = "#CC79A7"
 
     
         qiskit [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Qiskit - IBM Quantum Algorithm Library</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Qiskit - IBM Quantum Algorithm Library</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'></td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'> </td>
                           </tr>
                        </table>
                       >
@@ -31,12 +33,12 @@ subgraph "cluster_quantum computing" {
     
         cirq [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Cirq - Microsoft Quantum Algorithm Library</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Cirq - Microsoft Quantum Algorithm Library</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'></td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'> </td>
                           </tr>
                        </table>
                       >
@@ -44,12 +46,12 @@ subgraph "cluster_quantum computing" {
     
         quantum_computing [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Quantum Computing Overview</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Quantum Computing Overview</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'></td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'> </td>
                           </tr>
                        </table>
                       >
@@ -57,12 +59,12 @@ subgraph "cluster_quantum computing" {
     
         quantum_computing_cooling [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Cooling Quantum Devices</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Cooling Quantum Devices</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'></td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'> </td>
                           </tr>
                        </table>
                       >
@@ -73,12 +75,12 @@ subgraph "cluster_quantum computing" {
     
         dirac_notation [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>Dirac Notation</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Dirac Notation</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'> https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation</td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'> https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation</td>
                           </tr>
                        </table>
                       >
@@ -88,18 +90,19 @@ subgraph "cluster_quantum computing" {
 
 subgraph "cluster_physics" {
     label = "<b>Physics<b>";
-    penwidth = 0;
-    bgcolor = "#CC79A7"
+    penwidth = 0.5;
+    style = "rounded, dashed"
+    color = "#CC79A7"
 
     
         single_electron_transistor [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Single Electron Transistor</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Single Electron Transistor</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>A sensitive electronic<br/>device based on the<br/>Coulomb blockade effect</td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>A sensitive electronic<br/>device based on the<br/>Coulomb blockade effect </td>
                           </tr>
                        </table>
                       >
@@ -107,12 +110,12 @@ subgraph "cluster_physics" {
     
         quantum_mechanics [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Quantum Mechanics</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Quantum Mechanics</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>NEED DESC</td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>NEED DESC </td>
                           </tr>
                        </table>
                       >
@@ -120,12 +123,12 @@ subgraph "cluster_physics" {
     
         electron [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>The Electron</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>The Electron</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>A<br/>fundamental<br/>Quantum<br/>Particle</td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>A fundamental Quantum<br/>Particle </td>
                           </tr>
                        </table>
                       >
@@ -136,12 +139,12 @@ subgraph "cluster_physics" {
     
         coulomb_blockade [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>Coloumb Blockade</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Coloumb Blockade</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>Stepped,<br/>staggered flow<br/>of electrons,<br/>based on the<br/>bias-voltage<br/>across a<br/>conductance<br/>tunnel junction </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Stepped, staggered flow<br/>of electrons, based on<br/>the bias-voltage across a<br/>conductance tunnel<br/>junction </td>
                           </tr>
                        </table>
                       >
@@ -149,12 +152,25 @@ subgraph "cluster_physics" {
     
         general_relativity [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>General Relativity</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>General Relativity</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'> </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'> </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        special_relativity [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Special Relativity</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'> </td>
                           </tr>
                        </table>
                       >
@@ -162,12 +178,12 @@ subgraph "cluster_physics" {
     
         quantum_numbers [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>Quantum numbers</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Quantum numbers</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>Four s, l, m<br/>and q </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Four s, l, m and q </td>
                           </tr>
                        </table>
                       >
@@ -175,12 +191,12 @@ subgraph "cluster_physics" {
     
         aufbau_principle [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>Aufbau Principle</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Aufbau Principle</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>Electrons fill<br/>the lowest<br/>energy first.<br/>Order in which<br/>electrons fill<br/>the orbitals </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Electrons fill the lowest<br/>energy first. Order in<br/>which electrons fill the<br/>orbitals </td>
                           </tr>
                        </table>
                       >
@@ -188,12 +204,12 @@ subgraph "cluster_physics" {
     
         hunds_rule [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>hunds rule</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>hunds rule</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>hunds rule </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>hunds rule </td>
                           </tr>
                        </table>
                       >
@@ -201,12 +217,12 @@ subgraph "cluster_physics" {
     
         electron_orbitals [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>electron_orbitals</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>electron_orbitals</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>how electrons<br/>hang about a<br/>nucleus </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>how electrons hang about<br/>a nucleus </td>
                           </tr>
                        </table>
                       >
@@ -214,12 +230,12 @@ subgraph "cluster_physics" {
     
         pauli_exclusion [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>Pauli Exclusion Principle</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Pauli Exclusion Principle</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>number of electron field<br/>energies for a given<br/>atom; no two electrons<br/>can have the same set of<br/>quantum numbers </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>number of electron field<br/>energies for a given<br/>atom; no two electrons<br/>can have the same set of<br/>quantum numbers </td>
                           </tr>
                        </table>
                       >
@@ -227,12 +243,12 @@ subgraph "cluster_physics" {
     
         fermi_gas [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>Fermi Gas</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Fermi Gas</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>related<br/>to <b>Ele<br/>ctron<br/>Gas</b> </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>related to <b>Electron<br/>Gas</b> </td>
                           </tr>
                        </table>
                       >
@@ -240,12 +256,38 @@ subgraph "cluster_physics" {
     
         nmr [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#F0E442'>Nuclear Magnetic Resonance</td>
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Nuclear Magnetic Resonance</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'> </td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Nuclear magnetic resonance<br/>(NMR) is a physical<br/>phenomenon in which nuclei<br/>in a strong constant<br/>magnetic field are<br/>perturbed by a weak<br/>oscillating magnetic field<br/>(in the near field) and<br/>respond by producing an<br/>electromagnetic signal<br/>with a frequency<br/>characteristic of the<br/>magnetic field at the<br/>nucleus. </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        einsteins_equation [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Einsteins Equation</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>In the general theory of<br/>relativity, the Einstein<br/>field equations relate<br/>the geometry of spacetime<br/>to the distribution of<br/>matter within it. </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        hamiltonian [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#F0E442'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#F0E442'>Hamiltonian</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>In quantum mechanics, the<br/>Hamiltonian of a system<br/>is an operator<br/>corresponding to the<br/>total energy of that<br/>system, including both<br/>kinetic energy and<br/>potential energy. </td>
                           </tr>
                        </table>
                       >
@@ -255,18 +297,19 @@ subgraph "cluster_physics" {
 
 subgraph "cluster_maths" {
     label = "<b>Maths<b>";
-    penwidth = 0;
-    bgcolor = "#CC79A7"
+    penwidth = 0.5;
+    style = "rounded, dashed"
+    color = "#CC79A7"
 
     
         linear_algebra [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Linear Algebra</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Linear Algebra</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>Vectors,<br/>Matrices,<br/>Tensors</td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Vectors, Matrices,<br/>Tensors </td>
                           </tr>
                        </table>
                       >
@@ -274,12 +317,12 @@ subgraph "cluster_maths" {
     
         differential_calculus [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Differential Calculus</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Differential Calculus</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'>Differential<br/>Equations; Relates<br/>one or more unknown<br/>functions and their<br/>derivatives.</td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Differential calculus is<br/>about finding the rate of<br/>change of one quantity<br/>with respect to another<br/>quantity. </td>
                           </tr>
                        </table>
                       >
@@ -287,12 +330,12 @@ subgraph "cluster_maths" {
     
         complex_numbers [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Complex Numbers</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Complex Numbers</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'></td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Complex numbers are the<br/>field C of numbers of the<br/>form x+iy, where x and y<br/>are real numbers and i is<br/>the imaginary unit equal<br/>to √-1 </td>
                           </tr>
                        </table>
                       >
@@ -300,12 +343,12 @@ subgraph "cluster_maths" {
     
         integral_calculus [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Integral Calculus</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Integral Calculus</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'></td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Integral Calculus is the<br/>branch of calculus where<br/>we study integrals and<br/>their properties.<br/>Integration is an<br/>essential concept which<br/>is the inverse process of<br/>differentiation </td>
                           </tr>
                        </table>
                       >
@@ -313,12 +356,12 @@ subgraph "cluster_maths" {
     
         probabilities [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Probabilities and Statistics</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Probabilities and Statistics</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'></td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'> </td>
                           </tr>
                        </table>
                       >
@@ -326,12 +369,90 @@ subgraph "cluster_maths" {
     
         euclidean_geometry [
                shape = none,
-               label=<<table border="0">
-                          <tr>
-                              <td bgcolor='#56B4E9'>Euclidean Geometry</td>
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Euclidean Geometry</td>
                           </tr>
-                          <tr>
-                              <td bgcolor='#ffffff'></td>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Euclidean geometry, the<br/>study of plane and solid<br/>figures on the basis of<br/>five axioms, and theorems<br/>employed by the Greek<br/>mathematician Euclid (c.<br/>300 bce). </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        non_euclidean_geometry [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Non Euclidean Geometry</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Non-Euclidean geometry is<br/>the study of geometry on<br/>surfaces which are not<br/>flat; e.g. spacetime in<br/>our universe </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        differential_geometry [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Differential Geometry</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Differential geometry is<br/>a mathematical discipline<br/>that studies the geometry<br/>of smooth shapes and<br/>smooth spaces, otherwise<br/>known as smooth<br/>manifolds. </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        geometry [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Geometry</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Geometry is all about<br/>shapes and their<br/>properties. </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        algebra [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Algebra</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Algebra is the part of<br/>mathematics that helps<br/>represent problems or<br/>situations in the form of<br/>mathematical expressions </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        calculus [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Calculus</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>Calculus is the<br/>mathematical study of<br/>change, in the same way<br/>that geometry is the<br/>study of shape and<br/>algebra is the study of<br/>operations and their<br/>application to solving<br/>equations </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        hilbert_space [
+               shape = none,
+               label=<<table border="0" style="rounded" color='#56B4E9'>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#56B4E9'>Hilbert Space</td>
+                          </tr>
+                          <tr border="0">
+                              <td style="rounded"  border="1" bgcolor='#ffffff'>A Hilbert space is a<br/>mathematical concept<br/>covering the extra-<br/>dimensional use of<br/>Euclidean space—i.e., a<br/>space with more than<br/>three dimensions. A<br/>Hilbert space uses the<br/>mathematics of two and<br/>three dimensions to try<br/>and describe what happens<br/>in greater than three<br/>dimensions. </td>
                           </tr>
                        </table>
                       >
@@ -352,7 +473,7 @@ subgraph "cluster_maths" {
 
    vid_linear_algebra [ label="3Blue1Brown - Linear\nAlgebra - Series", tooltip="https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab", URL="https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"]
 
-   lessons_gilbert_strang_diff_equations_lin_alg [ label="Differential\nEquations and Linear\nAlgebra", tooltip="https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/pages/differential-equations-and-linear-algebra/", URL="https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/pages/differential-equations-and-linear-algebra/"]
+   lessons_gilbert_strang_diff_equations_lin_alg [ label="Online Course -\nDifferential\nEquations and Linear\nAlgebra - Gilbert\nStrang", tooltip="https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/pages/differential-equations-and-linear-algebra/", URL="https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/pages/differential-equations-and-linear-algebra/"]
 
    lessons_khan_acadamy_diff_equations [ label="Khan Academy -\nDifferential\nEquations", tooltip="https://www.khanacademy.org/math/differential-equations", URL="https://www.khanacademy.org/math/differential-equations"]
 
@@ -381,6 +502,20 @@ subgraph "cluster_maths" {
    richardfeynmanquantummechanicalviewofreality1youtube [ label="Richard Feynman:\nQuantum Mechanical\nView of Reality 1 -\nYouTube", tooltip="https://www.youtube.com/watch?v=ZcpwnozMh2U&t=3056s", URL="https://www.youtube.com/watch?v=ZcpwnozMh2U&t=3056s"]
 
    nuclearmagneticresonancewikipedia [ label="Nuclear magnetic\nresonance -\nWikipedia", tooltip="https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance", URL="https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance"]
+
+   howgeometrycreatedmodernphysicswithyanghuiheyoutube [ label="How geometry created\nmodern physics –\nwith Yang-Hui He -\nYouTube", tooltip="https://www.youtube.com/watch?v=z8jdndd-x7w", URL="https://www.youtube.com/watch?v=z8jdndd-x7w"]
+
+   ila6thed2023 [ label="BOOK - Introduction\nto Linear Algebra,\n6th Ed. (2023) -\nGilbert Strang", tooltip="https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html", URL="https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html"]
+
+   complexnumbersyoutube [ label="Complex Numbers -\nEddie Woo - YouTube", tooltip="https://www.youtube.com/playlist?list=PL5KkMZvBpo5CE__2qeqZQa5e8gSkt1Ypy", URL="https://www.youtube.com/playlist?list=PL5KkMZvBpo5CE__2qeqZQa5e8gSkt1Ypy"]
+
+   introductiontodifferentiationyoutube [ label="Introduction to\nDifferentiation -\nEddie Woo - YouTube", tooltip="https://www.youtube.com/playlist?list=PL5KkMZvBpo5DwIsDKWdHYmkRZmXMi1mE8", URL="https://www.youtube.com/playlist?list=PL5KkMZvBpo5DwIsDKWdHYmkRZmXMi1mE8"]
+
+   complexnumbersalgebra2mathkhanacademy [ label="Complex numbers -\nAlgebra 2 - Math -\nKhan Academy", tooltip="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:complex", URL="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:complex"]
+
+   differential_calculus_syd_unsw_book [ label="Sydney University -\nIntroduction to\nDifferential\nCalculus", tooltip="https://www.sydney.edu.au/content/dam/students/documents/mathematics-learning-centre/introduction-to-differential-calculus.pdf", URL="https://www.sydney.edu.au/content/dam/students/documents/mathematics-learning-centre/introduction-to-differential-calculus.pdf"]
+
+   understanding_einsteins_equation_general_relativity [ label="How to understand\nEinstein’s equation\nfor general\nrelativity", tooltip="https://bigthink.com/starts-with-a-bang/einstein-general-theory-relativity-equation/", URL="https://bigthink.com/starts-with-a-bang/einstein-general-theory-relativity-equation/"]
 
 
 /* relationships */
@@ -430,6 +565,52 @@ subgraph "cluster_maths" {
    nuclearmagneticresonancewikipedia -> nmr [ label="explains"]
 
    electron_orbitals -> electron [ label="relates_to"]
+
+   howgeometrycreatedmodernphysicswithyanghuiheyoutube -> euclidean_geometry [ label="relates_to"]
+
+   howgeometrycreatedmodernphysicswithyanghuiheyoutube -> geometry [ label="relates_to"]
+
+   howgeometrycreatedmodernphysicswithyanghuiheyoutube -> algebra [ label="relates_to"]
+
+   howgeometrycreatedmodernphysicswithyanghuiheyoutube -> calculus [ label="relates_to"]
+
+   howgeometrycreatedmodernphysicswithyanghuiheyoutube -> special_relativity [ label="relates_to"]
+
+   howgeometrycreatedmodernphysicswithyanghuiheyoutube -> general_relativity [ label="relates_to"]
+
+   howgeometrycreatedmodernphysicswithyanghuiheyoutube -> differential_geometry [ label="relates_to"]
+
+   differential_geometry -> differential_calculus [ label="relates_to"]
+
+   differential_calculus -> calculus [ label="relates_to"]
+
+   integral_calculus -> calculus [ label="relates_to"]
+
+   differential_geometry -> geometry [ label="relates_to"]
+
+   euclidean_geometry -> geometry [ label="relates_to"]
+
+   non_euclidean_geometry -> geometry [ label="relates_to"]
+
+   seancarrollextractingtheuniversefromthewavefunctionyoutube -> einsteins_equation [ label="explains"]
+
+   seancarrollextractingtheuniversefromthewavefunctionyoutube -> hilbert_space [ label="explains"]
+
+   seancarrollextractingtheuniversefromthewavefunctionyoutube -> hamiltonian [ label="explains"]
+
+   ila6thed2023 -> linear_algebra [ label="teaches"]
+
+   complexnumbersyoutube -> complex_numbers [ label="teaches"]
+
+   introductiontodifferentiationyoutube -> differential_calculus [ label="teaches"]
+
+   complexnumbersalgebra2mathkhanacademy -> complex_numbers [ label="teaches"]
+
+   differential_calculus_syd_unsw_book -> differential_calculus [ label="teaches"]
+
+   understanding_einsteins_equation_general_relativity -> einsteins_equation [ label="explains"]
+
+   general_relativity -> einsteins_equation [ label="relates_to"]
 
 
 }

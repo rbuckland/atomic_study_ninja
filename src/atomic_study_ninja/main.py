@@ -76,10 +76,10 @@ def add_reference(study_material: StudyMaterial, url: str) -> StudyMaterial:
 
     html = urlopen(url)
     soup = BeautifulSoup(html, 'lxml')
-    title = soup.title.string
-    id = id_maker(title)
+    name = soup.title.string
+    id = id_maker(name)
 
-    study_material.resources.append(Resource(id=id, name=title,url=url))
+    study_material.resources.append(Resource(id=id, name=name,url=url))
     print(f":: added\n\t{id=}\n\t{name=}\n\t{url=}")
     return study_material
 
