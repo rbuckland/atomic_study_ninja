@@ -18,8 +18,8 @@ properties:
     items:
       $ref: '#/definitions/Relates'
 required:
-- topic_fields
-- resources
+  - topic_fields
+  - resources
 definitions:
   RulePrincipleConcept:
     title: RulePrincipleConcept
@@ -31,27 +31,16 @@ definitions:
       name:
         title: Name
         type: string
-      summary:
-        title: Summary
-        type: string
-    required:
-    - name
-    - summary
-  Resource:
-    title: Resource
-    type: object
-    properties:
-      id:
-        title: Id
-        type: string
-      title:
-        title: Title
-        type: string
       url:
         title: Url
+        default: ''
+        type: string
+      description:
+        title: Description
+        default: ''
         type: string
     required:
-    - url
+      - name
   Subject:
     title: Subject
     type: object
@@ -62,20 +51,16 @@ definitions:
       name:
         title: Name
         type: string
+      url:
+        title: Url
+        default: ''
+        type: string
       description:
         title: Description
+        default: ''
         type: string
-      learning:
-        title: Learning
-        default: []
-        type: array
-        items:
-          anyOf:
-          - $ref: '#/definitions/Resource'
-          - type: string
     required:
-    - name
-    - description
+      - name
   SubjectUniverse:
     title: SubjectUniverse
     type: object
@@ -88,21 +73,39 @@ definitions:
         type: array
         items:
           $ref: '#/definitions/RulePrincipleConcept'
-      subjects:
-        title: Subjects
+      subjects_topics:
+        title: Subjects Topics
         type: array
         items:
           $ref: '#/definitions/Subject'
     required:
-    - name
-    - rules_principles_concepts
-    - subjects
+      - name
+      - rules_principles_concepts
+      - subjects_topics
+  Resource:
+    title: Resource
+    type: object
+    properties:
+      id:
+        title: Id
+        type: string
+      name:
+        title: Name
+        type: string
+      url:
+        title: Url
+        type: string
+    required:
+      - name
+      - url
   Relationship:
     title: Relationship
     description: An enumeration.
     enum:
-    - explains
-    - relates to
+      - explains
+      - relates_to
+      - teaches
+    type: string
   Relates:
     title: Relates
     type: object
@@ -110,14 +113,12 @@ definitions:
       r_from:
         title: R From
         type: string
-        format: uuid4
       r_to:
         title: R To
         type: string
-        format: uuid4
       rel_type:
         $ref: '#/definitions/Relationship'
     required:
-    - r_from
-    - r_to
-    - rel_type
+      - r_from
+      - r_to
+      - rel_type

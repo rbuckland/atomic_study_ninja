@@ -3,63 +3,111 @@ topic_fields:
     rules_principles_concepts:
       - id: dirac_notation
         name: Dirac Notation
+        url: https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation
+        description: ""
     subjects_topics:
       - id: qiskit
         name: Qiskit - IBM Quantum Algorithm Library
+        url: ""
+        description: ""
       - id: cirq
         name: Cirq - Microsoft Quantum Algorithm Library
+        url: ""
+        description: ""
+      - id: quantum_computing
+        name: Quantum Computing Overview
+        url: ""
+        description: ""
+      - id: quantum_computing_cooling
+        name: Cooling Quantum Devices
+        url: ""
+        description: ""
   - name: physics
     rules_principles_concepts:
       - id: coulomb_blockade
         name: Coloumb Blockade
+        url: ""
         description:
-          Stepped, staggered flow of electrons, based on the bias-voltage across
-          a conductance tunnel junction
+          Stepped, staggered flow of electrons, based on the bias-voltage
+          across a conductance tunnel junction
+      - id: general_relativity
+        name: General Relativity
+        url: ""
+        description: ""
       - id: quantum_numbers
         name: Quantum numbers
+        url: ""
         description: Four s, l, m and q
       - id: aufbau_principle
         name: Aufbau Principle
+        url: ""
         description:
           Electrons fill the lowest energy first. Order in which electrons
           fill the orbitals
       - id: hunds_rule
         name: hunds rule
+        url: ""
         description: hunds rule
       - id: electron_orbitals
         name: electron_orbitals
+        url: ""
         description: how electrons hang about a nucleus
       - id: pauli_exclusion
         name: Pauli Exclusion Principle
+        url: ""
         description:
           number of electron field energies for a given atom; no two electrons
           can have the same set of quantum numbers
       - id: fermi_gas
         name: Fermi Gas
+        url: ""
         description: related to <b>Electron Gas</b>
+      - id: nmr
+        name: Nuclear Magnetic Resonance
+        url: ""
+        description: ""
     subjects_topics:
       - id: single_electron_transistor
         name: Single Electron Transistor
+        url: ""
         description: A sensitive electronic device based on the Coulomb blockade effect
+      - id: quantum_mechanics
+        name: Quantum Mechanics
+        url: ""
+        description: NEED DESC
+      - id: electron
+        name: The Electron
+        url: ""
+        description: A fundamental Quantum Particle
   - name: maths
     rules_principles_concepts: []
     subjects_topics:
       - id: linear_algebra
         name: Linear Algebra
+        url: ""
         description: Vectors, Matrices, Tensors
       - id: differential_calculus
         name: Differential Calculus
-        description: Differential Equations; Relates one or more unknown functions and their derivatives.
+        url: ""
+        description:
+          Differential Equations; Relates one or more unknown functions
+          and their derivatives.
       - id: complex_numbers
         name: Complex Numbers
+        url: ""
         description: ""
       - id: integral_calculus
         name: Integral Calculus
+        url: ""
         description: ""
-      - id: Probabilities
+      - id: probabilities
         name: Probabilities and Statistics
+        url: ""
         description: ""
-
+      - id: euclidean_geometry
+        name: Euclidean Geometry
+        url: ""
+        description: ""
 resources:
   - id: vid_aufbau_hund_pauli
     name: Aufbau principle, Hund's rule & Pauli exclusion principle
@@ -85,6 +133,38 @@ resources:
   - id: coulombblockadewikipedia
     name: Coulomb blockade - Wikipedia
     url: https://en.wikipedia.org/wiki/Coulomb_blockade
+  - id: quantumcomputingwithandreamorelloyoutube
+    name: Quantum Computing with Andrea Morello - YouTube
+    url: https://www.youtube.com/watch?v=jDW9bWSepB0
+  - id: nmrspectroscopyyoutube
+    name: NMR Spectroscopy - YouTube
+    url: https://www.youtube.com/watch?v=SBir5wUS3Bo&t=554s
+  - id: seancarrollextractingtheuniversefromthewavefunctionyoutube
+    name: "Sean Carroll: Extracting the universe from the wave function - YouTube"
+    url: https://www.youtube.com/watch?v=HOssfva2IBo&t=160s
+  - id: physicistseancarrollonthebiggestideasintheuniverseyoutube
+    name:
+      Einsteins Equation - Physicist Sean Carroll - The Biggest Ideas in the Universe
+      - YouTube
+    url: https://www.youtube.com/watch?v=CH39SDlxon4&t=3041s
+  - id: insideeinsteinsmindfullspecialnovapbsamericayoutube
+    name: Einstein - General Relativity - PBS America - YouTube
+    url: https://www.youtube.com/watch?v=7CZyDPELXs4
+  - id: thehistoryofmathematicsdocumentaryyoutube
+    name: The HISTORY of MATHEMATICS. Documentary - YouTube
+    url: https://www.youtube.com/watch?v=2WcbPcGrQZU&t=4s
+  - id: whatdoesanelectronlooklikeyoutube
+    name: What Does an Electron Look Like? - YouTube
+    url: https://www.youtube.com/watch?v=zZ5ww6aYAZ8&t=38s
+  - id: quantumcoolingtonearabsolutezeroyoutube
+    name: Quantum Cooling to (Near) Absolute Zero - YouTube
+    url: https://www.youtube.com/watch?v=7jT5rbE69ho
+  - id: richardfeynmanquantummechanicalviewofreality1youtube
+    name: "Richard Feynman: Quantum Mechanical View of Reality 1 - YouTube"
+    url: https://www.youtube.com/watch?v=ZcpwnozMh2U&t=3056s
+  - id: nuclearmagneticresonancewikipedia
+    name: Nuclear magnetic resonance - Wikipedia
+    url: https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance
 relates:
   - r_from: electron_orbitals
     r_to: pauli_exclusion
@@ -127,4 +207,31 @@ relates:
     rel_type: explains
   - r_from: single_electron_transistor
     r_to: coulomb_blockade
+    rel_type: relates_to
+  - r_from: physicistseancarrollonthebiggestideasintheuniverseyoutube
+    r_to: general_relativity
+    rel_type: explains
+  - r_from: insideeinsteinsmindfullspecialnovapbsamericayoutube
+    r_to: general_relativity
+    rel_type: explains
+  - r_from: whatdoesanelectronlooklikeyoutube
+    r_to: electron
+    rel_type: explains
+  - r_from: richardfeynmanquantummechanicalviewofreality1youtube
+    r_to: quantum_mechanics
+    rel_type: explains
+  - r_from: nmrspectroscopyyoutube
+    r_to: nmr
+    rel_type: explains
+  - r_from: quantumcomputingwithandreamorelloyoutube
+    r_to: quantum_computing
+    rel_type: explains
+  - r_from: quantumcoolingtonearabsolutezeroyoutube
+    r_to: quantum_computing_cooling
+    rel_type: explains
+  - r_from: nuclearmagneticresonancewikipedia
+    r_to: nmr
+    rel_type: explains
+  - r_from: electron_orbitals
+    r_to: electron
     rel_type: relates_to

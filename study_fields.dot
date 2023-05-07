@@ -42,6 +42,32 @@ subgraph "cluster_quantum computing" {
                       >
         ]
     
+        quantum_computing [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Quantum Computing Overview</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'></td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        quantum_computing_cooling [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Cooling Quantum Devices</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'></td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
 
     label = "quantum computing";
     
@@ -52,7 +78,7 @@ subgraph "cluster_quantum computing" {
                               <td bgcolor='#F0E442'>Dirac Notation</td>
                           </tr>
                           <tr>
-                              <td bgcolor='#ffffff'> </td>
+                              <td bgcolor='#ffffff'> https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation</td>
                           </tr>
                        </table>
                       >
@@ -79,6 +105,32 @@ subgraph "cluster_physics" {
                       >
         ]
     
+        quantum_mechanics [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Quantum Mechanics</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>NEED DESC</td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        electron [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>The Electron</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>A<br/>fundamental<br/>Quantum<br/>Particle</td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
 
     label = "physics";
     
@@ -90,6 +142,19 @@ subgraph "cluster_physics" {
                           </tr>
                           <tr>
                               <td bgcolor='#ffffff'>Stepped,<br/>staggered flow<br/>of electrons,<br/>based on the<br/>bias-voltage<br/>across a<br/>conductance<br/>tunnel junction </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        general_relativity [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>General Relativity</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'> </td>
                           </tr>
                        </table>
                       >
@@ -173,6 +238,19 @@ subgraph "cluster_physics" {
                       >
         ]
     
+        nmr [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>Nuclear Magnetic Resonance</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'> </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
 }
 
 subgraph "cluster_maths" {
@@ -233,11 +311,24 @@ subgraph "cluster_maths" {
                       >
         ]
     
-        Probabilities [
+        probabilities [
                shape = none,
                label=<<table border="0">
                           <tr>
                               <td bgcolor='#56B4E9'>Probabilities and Statistics</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'></td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        euclidean_geometry [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Euclidean Geometry</td>
                           </tr>
                           <tr>
                               <td bgcolor='#ffffff'></td>
@@ -271,6 +362,26 @@ subgraph "cluster_maths" {
 
    coulombblockadewikipedia [ label="Coulomb blockade -\nWikipedia", tooltip="https://en.wikipedia.org/wiki/Coulomb_blockade", URL="https://en.wikipedia.org/wiki/Coulomb_blockade"]
 
+   quantumcomputingwithandreamorelloyoutube [ label="Quantum Computing\nwith Andrea Morello\n- YouTube", tooltip="https://www.youtube.com/watch?v=jDW9bWSepB0", URL="https://www.youtube.com/watch?v=jDW9bWSepB0"]
+
+   nmrspectroscopyyoutube [ label="NMR Spectroscopy -\nYouTube", tooltip="https://www.youtube.com/watch?v=SBir5wUS3Bo&t=554s", URL="https://www.youtube.com/watch?v=SBir5wUS3Bo&t=554s"]
+
+   seancarrollextractingtheuniversefromthewavefunctionyoutube [ label="Sean Carroll:\nExtracting the\nuniverse from the\nwave function -\nYouTube", tooltip="https://www.youtube.com/watch?v=HOssfva2IBo&t=160s", URL="https://www.youtube.com/watch?v=HOssfva2IBo&t=160s"]
+
+   physicistseancarrollonthebiggestideasintheuniverseyoutube [ label="Einsteins Equation -\nPhysicist Sean\nCarroll - The\nBiggest Ideas in the\nUniverse - YouTube", tooltip="https://www.youtube.com/watch?v=CH39SDlxon4&t=3041s", URL="https://www.youtube.com/watch?v=CH39SDlxon4&t=3041s"]
+
+   insideeinsteinsmindfullspecialnovapbsamericayoutube [ label="Einstein - General\nRelativity - PBS\nAmerica - YouTube", tooltip="https://www.youtube.com/watch?v=7CZyDPELXs4", URL="https://www.youtube.com/watch?v=7CZyDPELXs4"]
+
+   thehistoryofmathematicsdocumentaryyoutube [ label="The HISTORY of\nMATHEMATICS.\nDocumentary -\nYouTube", tooltip="https://www.youtube.com/watch?v=2WcbPcGrQZU&t=4s", URL="https://www.youtube.com/watch?v=2WcbPcGrQZU&t=4s"]
+
+   whatdoesanelectronlooklikeyoutube [ label="What Does an\nElectron Look Like?\n- YouTube", tooltip="https://www.youtube.com/watch?v=zZ5ww6aYAZ8&t=38s", URL="https://www.youtube.com/watch?v=zZ5ww6aYAZ8&t=38s"]
+
+   quantumcoolingtonearabsolutezeroyoutube [ label="Quantum Cooling to\n(Near) Absolute Zero\n- YouTube", tooltip="https://www.youtube.com/watch?v=7jT5rbE69ho", URL="https://www.youtube.com/watch?v=7jT5rbE69ho"]
+
+   richardfeynmanquantummechanicalviewofreality1youtube [ label="Richard Feynman:\nQuantum Mechanical\nView of Reality 1 -\nYouTube", tooltip="https://www.youtube.com/watch?v=ZcpwnozMh2U&t=3056s", URL="https://www.youtube.com/watch?v=ZcpwnozMh2U&t=3056s"]
+
+   nuclearmagneticresonancewikipedia [ label="Nuclear magnetic\nresonance -\nWikipedia", tooltip="https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance", URL="https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance"]
+
 
 /* relationships */
 
@@ -301,6 +412,24 @@ subgraph "cluster_maths" {
    coulombblockadewikipedia -> coulomb_blockade [ label="explains"]
 
    single_electron_transistor -> coulomb_blockade [ label="relates_to"]
+
+   physicistseancarrollonthebiggestideasintheuniverseyoutube -> general_relativity [ label="explains"]
+
+   insideeinsteinsmindfullspecialnovapbsamericayoutube -> general_relativity [ label="explains"]
+
+   whatdoesanelectronlooklikeyoutube -> electron [ label="explains"]
+
+   richardfeynmanquantummechanicalviewofreality1youtube -> quantum_mechanics [ label="explains"]
+
+   nmrspectroscopyyoutube -> nmr [ label="explains"]
+
+   quantumcomputingwithandreamorelloyoutube -> quantum_computing [ label="explains"]
+
+   quantumcoolingtonearabsolutezeroyoutube -> quantum_computing_cooling [ label="explains"]
+
+   nuclearmagneticresonancewikipedia -> nmr [ label="explains"]
+
+   electron_orbitals -> electron [ label="relates_to"]
 
 
 }
