@@ -1,50 +1,123 @@
-definitions:
-  BaseThing:
-    properties: {}
-    title: BaseThing
-    type: object
-  Resource:
-    properties:
-      references:
-        items: {$ref: '#/definitions/BaseThing'}
-        title: References
-        type: array
-      title: {title: Title, type: string}
-      url: {title: Url, type: string}
-    required: [title, url, references]
-    title: Resource
-    type: object
-  RulePrincipleConcept:
-    properties:
-      name: {title: Name, type: string}
-      relates_to:
-        items: {$ref: '#/definitions/BaseThing'}
-        title: Relates To
-        type: array
-      summary: {title: Summary, type: string}
-    required: [name, summary, relates_to]
-    title: RulePrincipleConcept
-    type: object
-  TopicField:
-    properties:
-      name: {title: Name, type: string}
-      rules_principles_concepts:
-        items: {$ref: '#/definitions/RulePrincipleConcept'}
-        title: Rules Principles Concepts
-        type: array
-    required: [name, rules_principles_concepts]
-    title: TopicField
-    type: object
-properties:
-  resources:
-    items: {$ref: '#/definitions/Resource'}
-    title: Resources
-    type: array
-  topic_fields:
-    items: {$ref: '#/definitions/TopicField'}
-    title: Topic Fields
-    type: array
-required: [topic_fields, resources]
 title: StudyMaterial
 type: object
-
+properties:
+  topic_fields:
+    title: Topic Fields
+    type: array
+    items:
+      $ref: '#/definitions/SubjectUniverse'
+  resources:
+    title: Resources
+    type: array
+    items:
+      $ref: '#/definitions/Resource'
+  relates:
+    title: Relates
+    default: []
+    type: array
+    items:
+      $ref: '#/definitions/Relates'
+required:
+- topic_fields
+- resources
+definitions:
+  RulePrincipleConcept:
+    title: RulePrincipleConcept
+    type: object
+    properties:
+      id:
+        title: Id
+        type: string
+      name:
+        title: Name
+        type: string
+      summary:
+        title: Summary
+        type: string
+    required:
+    - name
+    - summary
+  Resource:
+    title: Resource
+    type: object
+    properties:
+      id:
+        title: Id
+        type: string
+      title:
+        title: Title
+        type: string
+      url:
+        title: Url
+        type: string
+    required:
+    - url
+  Subject:
+    title: Subject
+    type: object
+    properties:
+      id:
+        title: Id
+        type: string
+      name:
+        title: Name
+        type: string
+      description:
+        title: Description
+        type: string
+      learning:
+        title: Learning
+        default: []
+        type: array
+        items:
+          anyOf:
+          - $ref: '#/definitions/Resource'
+          - type: string
+    required:
+    - name
+    - description
+  SubjectUniverse:
+    title: SubjectUniverse
+    type: object
+    properties:
+      name:
+        title: Name
+        type: string
+      rules_principles_concepts:
+        title: Rules Principles Concepts
+        type: array
+        items:
+          $ref: '#/definitions/RulePrincipleConcept'
+      subjects:
+        title: Subjects
+        type: array
+        items:
+          $ref: '#/definitions/Subject'
+    required:
+    - name
+    - rules_principles_concepts
+    - subjects
+  Relationship:
+    title: Relationship
+    description: An enumeration.
+    enum:
+    - explains
+    - relates to
+  Relates:
+    title: Relates
+    type: object
+    properties:
+      r_from:
+        title: R From
+        type: string
+        format: uuid4
+      r_to:
+        title: R To
+        type: string
+        format: uuid4
+      rel_type:
+        $ref: '#/definitions/Relationship'
+    required:
+    - r_from
+    - r_to
+    - rel_type

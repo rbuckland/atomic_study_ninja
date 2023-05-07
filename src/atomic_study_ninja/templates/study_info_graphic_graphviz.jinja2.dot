@@ -1,0 +1,62 @@
+/*
+https://graphviz.org/Gallery/undirected/gd_1994_2007.html
+*/
+
+digraph g {
+fontname="Helvetica,Arial,sans-serif"
+node [fontname="Helvetica,Arial,sans-serif", shape="record", style="rounded"]
+edge [fontname="Helvetica,Arial,sans-serif"]
+layout = fdp;
+splines = true;
+
+{% for t in topic_fields %}
+subgraph "cluster_{{t.name}}" {
+    label = "<b>{{t.name | capitalize}}<b>";
+    penwidth = 0;
+    bgcolor = "{{COLOR_PINK}}"
+
+    {% for s in t.subjects_topics %}
+        {{s.id}} [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='{{COLOR_BLUE1}}'>{{s.name}}</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>{{s.description | wordwrap( width = (s.name | length), wrapstring = '<br/>') }}</td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    {% endfor %}
+
+    label = "{{t.name}}";
+    {% for p in t.rules_principles_concepts %}
+        {{p.id}} [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='{{COLOR_YELLOW}}'>{{p.name}}</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>{{p.description | wordwrap( width = (p.name | length), wrapstring = '<br/>') }} {{p.url}}</td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    {% endfor %}
+}
+{% endfor %}
+
+
+/* resources */
+{% for r in resources %}
+   {{r.id}} [ label="{{r.name | wordwrap( width = 20, wrapstring = '\\n') }}", tooltip="{{r.url}}", URL="{{r.url}}"]
+{% endfor %}
+
+/* relationships */
+{% for r in relates %}
+   {{r.r_from}} -> {{r.r_to}} [ label="{{r.rel_type}}"]
+{% endfor %}
+
+}

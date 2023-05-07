@@ -1,37 +1,130 @@
 topic_fields:
+  - name: quantum computing
+    rules_principles_concepts:
+      - id: dirac_notation
+        name: Dirac Notation
+    subjects_topics:
+      - id: qiskit
+        name: Qiskit - IBM Quantum Algorithm Library
+      - id: cirq
+        name: Cirq - Microsoft Quantum Algorithm Library
   - name: physics
     rules_principles_concepts:
-      -
-          name: Pauli Exclusion Principle
-          summary: number of electron field energies for a given atom; no two electrons can have the same set of quantum numbers
-      - aufbau_principle:
-          name: Aufbau Principle
-          summary: Electrons fill the lowest energy first. Order in which electrons fill the orbitals
-      hunds_rules:
-        image:
-      quantum_numbers:
+      - id: coulomb_blockade
+        name: Coloumb Blockade
+        description:
+          Stepped, staggered flow of electrons, based on the bias-voltage across
+          a conductance tunnel junction
+      - id: quantum_numbers
         name: Quantum numbers
-      electron_orbitals: {}
+        description: Four s, l, m and q
+      - id: aufbau_principle
+        name: Aufbau Principle
+        description:
+          Electrons fill the lowest energy first. Order in which electrons
+          fill the orbitals
+      - id: hunds_rule
+        name: hunds rule
+        description: hunds rule
+      - id: electron_orbitals
+        name: electron_orbitals
+        description: how electrons hang about a nucleus
+      - id: pauli_exclusion
+        name: Pauli Exclusion Principle
+        description:
+          number of electron field energies for a given atom; no two electrons
+          can have the same set of quantum numbers
+      - id: fermi_gas
+        name: Fermi Gas
+        description: related to <b>Electron Gas</b>
+    subjects_topics:
+      - id: single_electron_transistor
+        name: Single Electron Transistor
+        description: A sensitive electronic device based on the Coulomb blockade effect
   - name: maths
-    subject:
-      linear_algebra:
+    rules_principles_concepts: []
+    subjects_topics:
+      - id: linear_algebra
+        name: Linear Algebra
+        description: Vectors, Matrices, Tensors
+      - id: differential_calculus
+        name: Differential Calculus
+        description: Differential Equations; Relates one or more unknown functions and their derivatives.
+      - id: complex_numbers
+        name: Complex Numbers
+        description: ""
+      - id: integral_calculus
+        name: Integral Calculus
+        description: ""
+      - id: Probabilities
+        name: Probabilities and Statistics
+        description: ""
 
 resources:
-  books:
-  videos:
-    - url: https://www.youtube.com/watch?v=9ra0BHbHdoA
-      content:
-        - topic_fields.physics.rules_principles_concepts.pauli_exclusion_principle
-        - topic_fields.physics.rules_principles_concepts.aufbau_principle
-        - topic_fields.physics.rules_principles_concepts.hunds_rules
-        - topic_fields.physics.rules_principles_concepts.quantum_numbers
-
-    - url: https://www.youtube.com/watch?v=Aoi4j8es4gQ
-      title: Prof Dave - Quantum Numbers, Atomic Orbitals, and Electron Configurations
-      content:
-        - topic_fields.physics.rules_principles_concepts.pauli_exclusion_principle
-        - topic_fields.physics.rules_principles_concepts.aufbau_principle
-        - topic_fields.physics.rules_principles_concepts.quantum_numbers
-    - url: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
-      title: 3Blue1Brown - Linear Algebra - Series
-  websites:
+  - id: vid_aufbau_hund_pauli
+    name: Aufbau principle, Hund's rule & Pauli exclusion principle
+    url: https://www.youtube.com/watch?v=9ra0BHbHdoA
+  - id: vid_prof_dave_quant_no_atomic_electron
+    name: Prof Dave - Quantum Numbers, Atomic Orbitals, and Electron Configurations
+    url: https://www.youtube.com/watch?v=Aoi4j8es4gQ
+  - id: vid_linear_algebra
+    name: 3Blue1Brown - Linear Algebra - Series
+    url: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+  - id: lessons_gilbert_strang_diff_equations_lin_alg
+    name: Differential Equations and Linear Algebra
+    url: https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/pages/differential-equations-and-linear-algebra/
+  - id: lessons_khan_acadamy_diff_equations
+    name: Khan Academy - Differential Equations
+    url: https://www.khanacademy.org/math/differential-equations
+  - id: definition_fermi_gas
+    name: Wikipedia - Fermi Gas
+    url: https://en.wikipedia.org/wiki/Fermi_gas
+  - id: singleelectrontransistorwikipedia
+    name: Single-electron transistor - Wikipedia
+    url: https://en.wikipedia.org/wiki/Single-electron_transistor
+  - id: coulombblockadewikipedia
+    name: Coulomb blockade - Wikipedia
+    url: https://en.wikipedia.org/wiki/Coulomb_blockade
+relates:
+  - r_from: electron_orbitals
+    r_to: pauli_exclusion
+    rel_type: relates_to
+  - r_from: vid_aufbau_hund_pauli
+    r_to: aufbau_principle
+    rel_type: explains
+  - r_from: vid_aufbau_hund_pauli
+    r_to: hunds_rule
+    rel_type: explains
+  - r_from: vid_aufbau_hund_pauli
+    r_to: pauli_exclusion
+    rel_type: explains
+  - r_from: vid_linear_algebra
+    r_to: linear_algebra
+    rel_type: teaches
+  - r_from: vid_prof_dave_quant_no_atomic_electron
+    r_to: quantum_numbers
+    rel_type: teaches
+  - r_from: vid_prof_dave_quant_no_atomic_electron
+    r_to: electron_orbitals
+    rel_type: teaches
+  - r_from: lessons_gilbert_strang_diff_equations_lin_alg
+    r_to: linear_algebra
+    rel_type: teaches
+  - r_from: lessons_gilbert_strang_diff_equations_lin_alg
+    r_to: differential_calculus
+    rel_type: teaches
+  - r_from: lessons_khan_acadamy_diff_equations
+    r_to: differential_calculus
+    rel_type: teaches
+  - r_from: definition_fermi_gas
+    r_to: fermi_gas
+    rel_type: explains
+  - r_from: singleelectrontransistorwikipedia
+    r_to: single_electron_transistor
+    rel_type: explains
+  - r_from: coulombblockadewikipedia
+    r_to: coulomb_blockade
+    rel_type: explains
+  - r_from: single_electron_transistor
+    r_to: coulomb_blockade
+    rel_type: relates_to

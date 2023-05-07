@@ -1,0 +1,306 @@
+/*
+https://graphviz.org/Gallery/undirected/gd_1994_2007.html
+*/
+
+digraph g {
+fontname="Helvetica,Arial,sans-serif"
+node [fontname="Helvetica,Arial,sans-serif", shape="record", style="rounded"]
+edge [fontname="Helvetica,Arial,sans-serif"]
+layout = fdp;
+splines = true;
+
+
+subgraph "cluster_quantum computing" {
+    label = "<b>Quantum computing<b>";
+    penwidth = 0;
+    bgcolor = "#CC79A7"
+
+    
+        qiskit [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Qiskit - IBM Quantum Algorithm Library</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'></td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        cirq [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Cirq - Microsoft Quantum Algorithm Library</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'></td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+
+    label = "quantum computing";
+    
+        dirac_notation [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>Dirac Notation</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'> </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+}
+
+subgraph "cluster_physics" {
+    label = "<b>Physics<b>";
+    penwidth = 0;
+    bgcolor = "#CC79A7"
+
+    
+        single_electron_transistor [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Single Electron Transistor</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>A sensitive electronic<br/>device based on the<br/>Coulomb blockade effect</td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+
+    label = "physics";
+    
+        coulomb_blockade [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>Coloumb Blockade</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>Stepped,<br/>staggered flow<br/>of electrons,<br/>based on the<br/>bias-voltage<br/>across a<br/>conductance<br/>tunnel junction </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        quantum_numbers [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>Quantum numbers</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>Four s, l, m<br/>and q </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        aufbau_principle [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>Aufbau Principle</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>Electrons fill<br/>the lowest<br/>energy first.<br/>Order in which<br/>electrons fill<br/>the orbitals </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        hunds_rule [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>hunds rule</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>hunds rule </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        electron_orbitals [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>electron_orbitals</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>how electrons<br/>hang about a<br/>nucleus </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        pauli_exclusion [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>Pauli Exclusion Principle</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>number of electron field<br/>energies for a given<br/>atom; no two electrons<br/>can have the same set of<br/>quantum numbers </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        fermi_gas [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#F0E442'>Fermi Gas</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>related<br/>to <b>Ele<br/>ctron<br/>Gas</b> </td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+}
+
+subgraph "cluster_maths" {
+    label = "<b>Maths<b>";
+    penwidth = 0;
+    bgcolor = "#CC79A7"
+
+    
+        linear_algebra [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Linear Algebra</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>Vectors,<br/>Matrices,<br/>Tensors</td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        differential_calculus [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Differential Calculus</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'>Differential<br/>Equations; Relates<br/>one or more unknown<br/>functions and their<br/>derivatives.</td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        complex_numbers [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Complex Numbers</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'></td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        integral_calculus [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Integral Calculus</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'></td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+        Probabilities [
+               shape = none,
+               label=<<table border="0">
+                          <tr>
+                              <td bgcolor='#56B4E9'>Probabilities and Statistics</td>
+                          </tr>
+                          <tr>
+                              <td bgcolor='#ffffff'></td>
+                          </tr>
+                       </table>
+                      >
+        ]
+    
+
+    label = "maths";
+    
+}
+
+
+
+/* resources */
+
+   vid_aufbau_hund_pauli [ label="Aufbau principle,\nHund's rule & Pauli\nexclusion principle", tooltip="https://www.youtube.com/watch?v=9ra0BHbHdoA", URL="https://www.youtube.com/watch?v=9ra0BHbHdoA"]
+
+   vid_prof_dave_quant_no_atomic_electron [ label="Prof Dave - Quantum\nNumbers, Atomic\nOrbitals, and\nElectron\nConfigurations", tooltip="https://www.youtube.com/watch?v=Aoi4j8es4gQ", URL="https://www.youtube.com/watch?v=Aoi4j8es4gQ"]
+
+   vid_linear_algebra [ label="3Blue1Brown - Linear\nAlgebra - Series", tooltip="https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab", URL="https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"]
+
+   lessons_gilbert_strang_diff_equations_lin_alg [ label="Differential\nEquations and Linear\nAlgebra", tooltip="https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/pages/differential-equations-and-linear-algebra/", URL="https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/pages/differential-equations-and-linear-algebra/"]
+
+   lessons_khan_acadamy_diff_equations [ label="Khan Academy -\nDifferential\nEquations", tooltip="https://www.khanacademy.org/math/differential-equations", URL="https://www.khanacademy.org/math/differential-equations"]
+
+   definition_fermi_gas [ label="Wikipedia - Fermi\nGas", tooltip="https://en.wikipedia.org/wiki/Fermi_gas", URL="https://en.wikipedia.org/wiki/Fermi_gas"]
+
+   singleelectrontransistorwikipedia [ label="Single-electron\ntransistor -\nWikipedia", tooltip="https://en.wikipedia.org/wiki/Single-electron_transistor", URL="https://en.wikipedia.org/wiki/Single-electron_transistor"]
+
+   coulombblockadewikipedia [ label="Coulomb blockade -\nWikipedia", tooltip="https://en.wikipedia.org/wiki/Coulomb_blockade", URL="https://en.wikipedia.org/wiki/Coulomb_blockade"]
+
+
+/* relationships */
+
+   electron_orbitals -> pauli_exclusion [ label="relates_to"]
+
+   vid_aufbau_hund_pauli -> aufbau_principle [ label="explains"]
+
+   vid_aufbau_hund_pauli -> hunds_rule [ label="explains"]
+
+   vid_aufbau_hund_pauli -> pauli_exclusion [ label="explains"]
+
+   vid_linear_algebra -> linear_algebra [ label="teaches"]
+
+   vid_prof_dave_quant_no_atomic_electron -> quantum_numbers [ label="teaches"]
+
+   vid_prof_dave_quant_no_atomic_electron -> electron_orbitals [ label="teaches"]
+
+   lessons_gilbert_strang_diff_equations_lin_alg -> linear_algebra [ label="teaches"]
+
+   lessons_gilbert_strang_diff_equations_lin_alg -> differential_calculus [ label="teaches"]
+
+   lessons_khan_acadamy_diff_equations -> differential_calculus [ label="teaches"]
+
+   definition_fermi_gas -> fermi_gas [ label="explains"]
+
+   singleelectrontransistorwikipedia -> single_electron_transistor [ label="explains"]
+
+   coulombblockadewikipedia -> coulomb_blockade [ label="explains"]
+
+   single_electron_transistor -> coulomb_blockade [ label="relates_to"]
+
+
+}
